@@ -14,14 +14,11 @@ function Projects() {
                     title="AI Travel Planner"
                     description="My thesis project — an AI-based travel planning app."
                     demoLink="https://szakdolgozat.maty.as/"
-                    githubLink="https://github.com/VargaEszter11/szakdolgozat"
                 />
                 <ProjectCard 
-                    stack="react · tailwind"
-                    title="This Portfolio"
-                    description="The site you're on right now — built to bring my work, projects, and a bit of who I am together in one place."
-                    demoLink="https://yoursite.com"
-                    githubLink="https://github.com/VargaEszter11/portfolio"
+                    stack="coming soon"
+                    title="Working on it"
+                    description="Something new is in the works — details to be added soon."
                 />
             </div>
         </div>

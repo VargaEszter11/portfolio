@@ -1,14 +1,29 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import '../index.css';
 import TypewriterText from './TypewriterText';
+import portfolioImage from '../assets/portfolio_image.png';
 
 function Hero() {
     const heading = "Hi, I'm Eszter"
     const subtext = 'Fullstack dev. Climber. Dog person. Always planning my next trip.'
+    const textRef = useRef(null)
+    const [imageHeight, setImageHeight] = useState(null)
+
+    useEffect(() => {
+        const el = textRef.current
+        if (!el) return
+
+        const update = () => setImageHeight(el.offsetHeight)
+        update()
+
+        const observer = new ResizeObserver(update)
+        observer.observe(el)
+        return () => observer.disconnect()
+    }, [])
 
     return (
-        <div className="px-8 py-10 max-w-6xl mx-auto">
-            <div className="w-2/3">
+        <div className="px-8 py-10 max-w-6xl mx-auto flex items-center gap-8">
+            <div ref={textRef} className="flex-1">
                 <p className="font-mono text-sm text-teal">fullstack developer</p>
                 <h1 className="font-mono text-offwhite text-4xl font-medium mt-4">
                     <TypewriterText text={heading} />
@@ -28,6 +43,12 @@ function Hero() {
                     </a>
                 </div>
             </div>
+            <img
+                src={portfolioImage}
+                alt="Eszter"
+                className="w-auto shrink-0"
+                style={imageHeight ? { height: imageHeight } : { visibility: 'hidden', height: 0 }}
+            />
         </div>
     )
 }
