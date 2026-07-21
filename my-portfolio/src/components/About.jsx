@@ -10,8 +10,7 @@ function About() {
                 </h2>
                 <p className="font-mono text-base text-muted mt-4">
                     I'm a fullstack developer finishing my degree, still learning constantly and genuinely enjoying the process
-                    — figuring out not just how to build things, but how to build them well, and actually caring about getting the details right.
-                    I care more about understanding the why behind a bug than just making it disappear.
+                    - figuring out not just how to build things, but how to build them well, and actually caring about getting the details right.
                 </p>
                 <p className="font-mono text-base text-muted mt-4">
                     Outside of code, I'm usually planning my next trip, unwinding with a good series and way too much coffee,
