@@ -3,11 +3,11 @@ import '../index.css';
 
 function Skills() {
     return (
-        <div id="skills" className="px-8 py-10 max-w-6xl mx-auto">
+        <div id="skills" className="px-6 md:px-8 py-10 max-w-6xl mx-auto">
             <h2 className="font-mono text-offwhite text-2xl font-medium">
                 Skills
             </h2>
-            <div className="grid grid-cols-3 gap-8 mt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mt-8">
                 <div className="border border-white/10 rounded-md p-5 bg-white/[0.02]">
                     <p className="font-mono text-teal text-sm">
                         <span className="text-muted">const</span> frontend = [

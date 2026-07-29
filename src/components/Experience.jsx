@@ -3,14 +3,14 @@ import '../index.css'
 import { ExternalLink } from 'lucide-react'
 
 const internshipDetails = [
-    'I joined Shiwaforce through the dual education programme, working part-time alongside my computer engineering studies. The role has been a mix of product work, internal tooling, and exploring newer tech like AI integrations.',
+    'I joined Shiwaforce through the dual education programme, working part-time alongside my studies. The role has been a mix of product work, internal tooling, and exploring newer tech like AI integrations.',
     'Day to day, I build and maintain small Java applications, help automate repetitive workflows, and put together websites or tools when the team needs them. Some tasks are tightly scoped; others mean figuring out the problem first and then shipping something useful.',
     'Working in a real company environment taught me how to move from “it works on my machine” to something teammates can rely on - clearer requirements, better communication, and caring about the details that make software easier to hand off and maintain.',
     'It is still the place where I learn the most outside of university: picking up new stacks when needed, asking better questions, and getting comfortable owning a task from first idea to something people actually use.',
 ]
 
 const evoCampusDetails = [
-    'evoCampus is evosoft’s mentoring programme for University - a chance to work on real projects with mentors from industry, not just classroom assignments.',
+    'evoCampus is Evosoft Hungary\'s mentoring programme at my university - a chance to work on real projects with mentors from industry, not just classroom assignments.',
     'With my team I built a storytelling webapp: we planned the idea, split the work, and shipped something we could stand behind and present. The project itself is not public, but the process - collaborating, iterating, and demoing under time pressure - was the valuable part.',
     'At the 10th anniversary closing event we demoed our work alongside other student teams. Being there meant practicing how to explain a project clearly to mentors and guests, not only how to build it.',
     'The programme helped me get more comfortable with teamwork outside university courses: receiving feedback, owning my slice of the app, and seeing how a company-style mentoring setup actually works.',
@@ -59,12 +59,12 @@ function Experience() {
 
     return (
         <>
-            <div id="experience" className="px-8 py-10 max-w-6xl mx-auto">
+            <div id="experience" className="px-6 md:px-8 py-10 max-w-6xl mx-auto">
                 <h2 className="font-mono text-offwhite text-2xl font-medium">
                     Experience
                 </h2>
                 <div className="mt-8 space-y-8">
-                    <div className="border-l-2 border-teal/40 pl-6">
+                    <div className="border-l-2 border-teal/40 pl-4 md:pl-6">
                         <p className="font-mono text-sm text-muted">
                             2023. 09. - present
                         </p>
@@ -86,7 +86,7 @@ function Experience() {
                         </button>
                     </div>
 
-                    <div className="border-l-2 border-teal/40 pl-6">
+                    <div className="border-l-2 border-teal/40 pl-4 md:pl-6">
                         <p className="font-mono text-sm text-muted">
                             2025. 02. - 2026. 02.
                         </p>
@@ -130,7 +130,7 @@ function Experience() {
                         role="dialog"
                         aria-modal="true"
                         aria-labelledby={modal.titleId}
-                        className="w-full max-w-2xl max-h-[90vh] overflow-y-auto border border-white/10 rounded-md bg-ink p-6 shadow-xl"
+                        className="w-full max-w-2xl max-h-[90vh] overflow-y-auto border border-white/10 rounded-md bg-ink p-4 md:p-6 shadow-xl"
                         onClick={(event) => event.stopPropagation()}
                     >
                         <div className="flex items-start justify-between gap-4">
@@ -149,7 +149,7 @@ function Experience() {
                             <button
                                 type="button"
                                 onClick={() => setActiveModal(null)}
-                                className="font-mono text-muted text-sm cursor-pointer hover:text-offwhite"
+                                className="font-mono text-muted text-sm cursor-pointer hover:text-offwhite shrink-0"
                                 aria-label="Close"
                             >
                                 close
