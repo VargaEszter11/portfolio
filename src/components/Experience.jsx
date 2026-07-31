@@ -59,7 +59,7 @@ function Experience() {
 
     return (
         <>
-            <div id="experience" className="px-6 md:px-8 py-10 max-w-6xl mx-auto">
+            <div id="experience" className="px-6 md:px-8 py-10 max-w-6xl mx-auto scroll-mt-24">
                 <h2 className="font-mono text-offwhite text-2xl font-medium">
                     Experience
                 </h2>

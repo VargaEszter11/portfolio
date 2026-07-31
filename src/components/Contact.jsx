@@ -4,7 +4,7 @@ import { Mail, ExternalLink } from 'lucide-react';
 
 function Contact() {
     return (
-        <div id="contact" className="px-6 md:px-8 py-14 md:py-20 max-w-6xl mx-auto">
+        <div id="contact" className="px-6 md:px-8 py-14 md:py-20 max-w-6xl mx-auto scroll-mt-24">
             <div className="w-full md:w-2/3">
                 <h2 className="font-mono text-offwhite text-2xl font-medium">
                     Get in touch
