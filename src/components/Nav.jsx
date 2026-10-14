@@ -8,6 +8,7 @@ function Nav() {
         { href: '#about', label: 'about' },
         { href: '#projects', label: 'projects' },
         { href: '#experience', label: 'experience' },
+        { href: '#education', label: 'education' },
         { href: '#achievements', label: 'achievements' },
         { href: '#skills', label: 'skills' },
         { href: '#contact', label: 'contact' },
