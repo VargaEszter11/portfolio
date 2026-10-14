@@ -1,9 +1,9 @@
 import React from 'react'
 import '../index.css'
 import ProjectCard from './ProjectCard'
-import thesisMainPage from '../assets/thesis_main_page.png'
-import thesisPlan from '../assets/thesis_plan.png'
-import thesisVisited from '../assets/thesis_visited.png'
+import thesisMainPage from '../assets/main.png'
+import thesisPlan from '../assets/planned.png'
+import thesisVisited from '../assets/mapview.png'
 
 function Projects() {
     return (
