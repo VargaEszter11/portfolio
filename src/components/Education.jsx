@@ -6,8 +6,7 @@ import DetailModal from './DetailModal'
 const relevantCourses = [
     {
         name: 'Web Technologies 1 & 2',
-        description: 'HTML, CSS and JavaScript in the first course, Angular in the second. I built a small project for each - they are on my GitHub.',
-        link: { href: 'https://github.com/VargaEszter11', label: 'github' },
+        description: 'HTML, CSS and JavaScript in the first course, Angular in the second. I built a small project for each.',
     },
     {
         name: 'Databases',
@@ -15,8 +14,7 @@ const relevantCourses = [
     },
     {
         name: 'Object-Oriented Programming',
-        description: 'Object-oriented design in Java, together with AI-based programming. I am currently working on the course assignment, CampusLostFound.',
-        link: { href: 'https://github.com/VargaEszter11/CampusLostFound', label: 'github' },
+        description: 'Object-oriented design in Java, together with AI-based programming. The course assignment was CampusLostFound.',
     },
     {
         name: 'SAP ABAP Programming Basics',
@@ -31,7 +29,7 @@ const relevantCourses = [
 const ccnaCourses = [
     { name: 'CCNA: Introduction to Networks', status: 'completed' },
     { name: 'CCNA: Switching, Routing, and Wireless Essentials', status: 'completed' },
-    { name: 'CCNA: Enterprise Networking, Security, and Automation', status: 'in progress' },
+    { name: 'CCNA: Enterprise Networking, Security, and Automation', status: 'completed' },
 ]
 
 const universityDetails = [
@@ -42,7 +40,7 @@ const universityDetails = [
 
 const ccnaDetails = [
     'The Cisco Networking Academy CCNA track is a three-course series that goes from networking fundamentals through switching and routing to enterprise networks, security, and automation.',
-    'I have completed the first two courses and am currently working through the third.',
+    'I have completed all three courses.',
 ]
 
 const modals = {
@@ -98,7 +96,7 @@ function Education() {
 
                     <div className="border-l-2 border-teal/40 pl-4 md:pl-6">
                         <p className="font-mono text-sm text-muted">
-                            2 of 3 completed
+                            completed
                         </p>
                         <h3 className="font-mono text-offwhite text-lg font-medium mt-1">
                             CCNA courses
