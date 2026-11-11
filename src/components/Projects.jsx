@@ -1,13 +1,13 @@
 import React from 'react'
 import '../index.css'
 import ProjectCard from './ProjectCard'
-import thesisMainPage from '../assets/thesis_main_page.png'
-import thesisPlan from '../assets/thesis_plan.png'
-import thesisVisited from '../assets/thesis_visited.png'
+import thesisMainPage from '../assets/main.png'
+import thesisPlan from '../assets/planned.png'
+import thesisVisited from '../assets/mapview.png'
 
 function Projects() {
     return (
-        <div id="projects" className="px-6 md:px-8 py-10 max-w-6xl mx-auto">
+        <div id="projects" className="px-6 md:px-8 py-10 max-w-6xl mx-auto scroll-mt-24">
             <h2 className="font-mono text-offwhite text-2xl font-medium">
                 Projects
             </h2>

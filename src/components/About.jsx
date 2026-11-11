@@ -3,7 +3,7 @@ import '../index.css';
 
 function About() {
     return (
-        <div id="about" className="px-6 md:px-8 max-w-6xl mx-auto">
+        <div id="about" className="px-6 md:px-8 max-w-6xl mx-auto scroll-mt-24">
             <div className="w-full md:w-2/3">
                 <h2 className="font-mono text-offwhite text-2xl font-medium">
                     About me
