@@ -21,14 +21,14 @@ const modals = {
     internship: {
         titleId: 'internship-modal-title',
         date: '2023. 09. - present',
-        title: 'Internship',
+        title: 'Full-Stack Developer',
         org: 'Shiwaforce.com Zrt.',
         details: internshipDetails,
     },
     evoCampus: {
         titleId: 'evocampus-modal-title',
         date: '2025. 02. - 2026. 02.',
-        title: 'evoCampus',
+        title: 'evoCampus Mentor Program',
         org: 'evosoft Hungary Kft. · University of Miskolc',
         details: evoCampusDetails,
         link: {
@@ -56,7 +56,7 @@ function Experience() {
                             2023. 09. - present
                         </p>
                         <h3 className="font-mono text-offwhite text-lg font-medium mt-1">
-                            Internship
+                            Full-Stack Developer
                         </h3>
                         <p className="font-mono text-teal text-sm mt-1">
                             Shiwaforce.com Zrt.
@@ -78,7 +78,7 @@ function Experience() {
                             2025. 02. - 2026. 02.
                         </p>
                         <h3 className="font-mono text-offwhite text-lg font-medium mt-1">
-                            evoCampus
+                            evoCampus Mentor Program
                         </h3>
                         <p className="font-mono text-teal text-sm mt-1">
                             evosoft Hungary Kft. · University of Miskolc
