@@ -8,6 +8,7 @@ function ProjectCard({ stack, title, description, demoLink, githubLink, details,
 
     const activeImage = activeIndex !== null ? images[activeIndex] : null
     const hasMultipleImages = images.length > 1
+    const hasPortraitImages = images.some((image) => image.portrait)
 
     const closeModal = () => {
         setActiveIndex(null)
@@ -118,7 +119,7 @@ function ProjectCard({ stack, title, description, demoLink, githubLink, details,
                         </div>
 
                         {images.length > 0 && (
-                            <div className="mt-6 grid grid-cols-3 gap-3">
+                            <div className={`mt-6 grid gap-3 ${hasPortraitImages ? 'grid-cols-2 sm:grid-cols-4' : 'grid-cols-3'}`}>
                                 {images.map((image, index) => (
                                     <button
                                         key={image.src}
@@ -129,7 +130,7 @@ function ProjectCard({ stack, title, description, demoLink, githubLink, details,
                                         <img
                                             src={image.src}
                                             alt={image.alt}
-                                            className="aspect-video w-full rounded-md border border-white/10 object-cover object-top transition group-hover:border-teal/50"
+                                            className={`w-full rounded-md border border-white/10 transition group-hover:border-teal/50 ${image.portrait ? 'h-auto' : 'aspect-video object-cover object-top'}`}
                                         />
                                         {image.caption && (
                                             <span className="mt-1 block font-mono text-faint text-xs">

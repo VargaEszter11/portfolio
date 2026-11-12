@@ -1,9 +1,14 @@
 import React from 'react'
 import '../index.css'
 import ProjectCard from './ProjectCard'
-import thesisMainPage from '../assets/main.png'
-import thesisPlan from '../assets/planned.png'
-import thesisVisited from '../assets/mapview.png'
+import thesisMainPage from '../assets/planventure/main.png'
+import thesisPlan from '../assets/planventure/planned.png'
+import thesisVisited from '../assets/planventure/mapview.png'
+
+import vintedItemsPage from '../assets/vinted/items.png'
+import vintedSoldPage from '../assets/vinted/sold.png'
+import vintedBuyCheckPage from '../assets/vinted/buycheck.png'
+import vintedResultsPage from '../assets/vinted/result.png'
 
 function Projects() {
     return (
@@ -40,6 +45,12 @@ function Projects() {
                                 'Vinted helper is a mobile app for people who resell second-hand clothes. It tracks your inventory with photos, shows the profit per item, and supports bundles with automatic price splitting.',
                                 'The backend is a Fastify REST API with JWT authentication on PostgreSQL, and the app is built with React Native and TypeScript. Everything runs in Docker.',
                                 'The "Buy check" feature identifies an item from photos and recommends whether it is worth buying, based on online prices and your own sales history.',
+                            ]}
+                            images={[
+                                { src: vintedItemsPage, alt: 'Vinted helper items list', caption: 'Items', portrait: true },
+                                { src: vintedSoldPage, alt: 'Vinted helper sold items view', caption: 'Sold items', portrait: true },
+                                { src: vintedBuyCheckPage, alt: 'Vinted helper buy check', caption: 'Buy check', portrait: true },
+                                { src: vintedResultsPage, alt: 'Vinted helper buy check result', caption: 'Buy check result', portrait: true },
                             ]}
                         />
                     </div>
