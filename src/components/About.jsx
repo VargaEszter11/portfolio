@@ -15,8 +15,9 @@ function About() {
                 <p className="font-mono text-base text-muted mt-4">
                     Outside of code, I'm usually planning my next trip, unwinding with a good series and way too much coffee,
                     or knee-deep in a DIY project I probably underestimated and will definitely finish eventually.
-                    I also try to make time for sports when I can, mostly as an excuse to step away from the screen and remember
-                    my body does other things besides type. It's a decent balance, most days.
+                    I'm a climber, I recently started running, and both are a great excuse to step away from the screen and give
+                    my body some attention. I also volunteer at the local dog shelter from time to time,
+                    which is easily the best way to reset after a long week.
                 </p>
             </div>
         </div>
