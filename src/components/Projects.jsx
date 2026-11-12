@@ -41,6 +41,7 @@ function Projects() {
                             stack="react native · typescript · node.js · postgresql · docker"
                             title="Vinted helper"
                             description="An inventory and profit tracker for second-hand clothing resellers."
+                            demoLink="https://vinted.hunlehet.hu/"
                             details={[
                                 'Vinted helper is a mobile app for people who resell second-hand clothes. It tracks your inventory with photos, shows the profit per item, and supports bundles with automatic price splitting.',
                                 'The backend is a Fastify REST API with JWT authentication on PostgreSQL, and the app is built with React Native and TypeScript. Everything runs in Docker.',
