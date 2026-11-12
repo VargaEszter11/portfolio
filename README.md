@@ -1,16 +1,29 @@
-# React + Vite
+# Eszter Varga - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My personal portfolio website: a single-page site with my projects, experience, education and skills.
 
-Currently, two official plugins are available:
+**Live:** https://vargaeszter11.github.io/portfolio/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech stack
 
-## React Compiler
+- [React](https://react.dev/) 19
+- [Vite](https://vite.dev/)
+- [Tailwind CSS](https://tailwindcss.com/) 4
+- [lucide-react](https://lucide.dev/) icons
+- Google Analytics (gtag.js)
+- GitHub Actions + GitHub Pages for deployment
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Project structure
 
-## Expanding the ESLint configuration
+```text
+src/
+  components/   One component per section, plus shared ones (ProjectCard, DetailModal)
+  assets/       Images and screenshots
+  index.css     Tailwind setup and theme colours
+  App.jsx       Page layout
+public/         Static files (favicon)
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Deployment
+
+Every push to `main` triggers the workflow in [.github/workflows/deploy.yml](.github/workflows/deploy.yml), which builds the site and deploys it to GitHub Pages.
