@@ -12,10 +12,28 @@ const internshipDetails = [
 
 const evoCampusDetails = [
     'evoCampus is Evosoft Hungary\'s mentoring programme at my university - a chance to work on real projects with mentors from industry, not just classroom assignments.',
-    'With my team I built a storytelling webapp: we planned the idea, split the work, and shipped something we could stand behind and present. The project itself is not public, but the process - collaborating, iterating, and demoing under time pressure - was the valuable part.',
+    'With my team I built a storytelling webapp: we planned the idea, split the work, and shipped something we could stand behind and present. I was responsible for designing and building the frontend, from the UI design to the React implementation. The project itself is not public, but the process - collaborating, iterating, and demoing under time pressure - was the valuable part.',
     'At the 10th anniversary closing event we demoed our work alongside other student teams. Being there meant practicing how to explain a project clearly to mentors and guests, not only how to build it.',
-    'The programme helped me get more comfortable with teamwork outside university courses: receiving feedback, owning my slice of the app, and seeing how a company-style mentoring setup actually works.',
+    'The programme helped me get more comfortable with teamwork outside university courses: receiving feedback, owning the frontend, and seeing how a company-style mentoring setup actually works.',
 ]
+
+const internshipSkills = ['java', 'python', 'javascript', 'typescript', 'react', 'angular', 'tailwindcss', 'figma', 'git', 'CI/CD', 'jira']
+const evoCampusSkills = ['typescript', 'react', 'tailwindcss', 'figma']
+
+function SkillTags({ skills }) {
+    return (
+        <div className="flex flex-wrap gap-2 mt-4">
+            {skills.map((skill) => (
+                <span
+                    key={skill}
+                    className="font-mono text-xs text-teal border border-teal/30 rounded-md px-2 py-1"
+                >
+                    {skill}
+                </span>
+            ))}
+        </div>
+    )
+}
 
 const modals = {
     internship: {
@@ -24,6 +42,7 @@ const modals = {
         title: 'Full-Stack Developer',
         org: 'Shiwaforce.com Zrt.',
         details: internshipDetails,
+        skills: internshipSkills,
     },
     evoCampus: {
         titleId: 'evocampus-modal-title',
@@ -31,6 +50,7 @@ const modals = {
         title: 'evoCampus Mentor Program',
         org: 'evosoft Hungary Kft. · University of Miskolc',
         details: evoCampusDetails,
+        skills: evoCampusSkills,
         link: {
             href: 'https://www.evosoft.hu/blog/10th-jubilee-evocampus-miskolc-university-students',
             label: '10th anniversary closing event',
@@ -64,6 +84,7 @@ function Experience() {
                         <p className="font-mono text-muted text-sm mt-3">
                             My work ranges from small Java applications to AI integrations and internal tooling - automating repetitive tasks and building websites where needed.
                         </p>
+                        <SkillTags skills={internshipSkills} />
                         <button
                             type="button"
                             onClick={() => setActiveModal('internship')}
@@ -84,8 +105,9 @@ function Experience() {
                             evosoft Hungary Kft. · University of Miskolc
                         </p>
                         <p className="font-mono text-muted text-sm mt-3">
-                            Participated in the evoCampus mentoring programme and built a storytelling webapp with my team.
+                            Participated in the evoCampus mentoring programme and built a storytelling webapp with my team. I was responsible for designing and building the frontend.
                         </p>
+                        <SkillTags skills={evoCampusSkills} />
                         <div className="flex flex-wrap items-center gap-4 mt-3">
                             <button
                                 type="button"
@@ -109,7 +131,9 @@ function Experience() {
             </div>
 
             {modal && (
-                <DetailModal modal={modal} onClose={closeModal} />
+                <DetailModal modal={modal} onClose={closeModal}>
+                    <SkillTags skills={modal.skills} />
+                </DetailModal>
             )}
         </>
     )
